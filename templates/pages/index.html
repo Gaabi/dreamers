@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+<!-- Showcase -->
+<section id="showcase">
+  <div class="container text-center">
+    <div class="home-search p-5">
+      <div class="overlay p-5">
+        <h1 class="display-4 mb-4">
+          Learning Simplified
+        </h1>
+        <p class="lead">
+          Dreamers is the best way to improve your coding skills ,enhance your
+          concepts and prepare for interviews
+
+          <hr />
+        </p>
+        <div class="button-row">
+          <button type="button" class="btn btn-secondary center">
+            Explore
+          </button>
+
+          <button type="button" class="btn btn-warning">
+            Buy Premium
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Listings -->
+<section id="listings" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Listing 1 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="{% static 'img/questions.jpg' %}" alt="" />
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">100 hand picked questions</h4>
+              <p> We've picked 100 of best coding questions which covers all the categories of coding interview questions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 2 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="{% static 'img/editor.jpg' %}" alt="" />
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">Code Execution Environment</h4>
+              <p>Learn , Code , Practice.<br \> A coding platform is provided to have hands on experience.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="{% static 'img/advance.png' %}" alt="" />
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">Basic to Advance </h4>
+              <p>The questions are organised such that you will become an expert in all the cateogries of coding interview questions </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
